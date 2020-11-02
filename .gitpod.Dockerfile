@@ -22,6 +22,7 @@ RUN addgroup -g 1000 node \
 ADD https://apache.mirrors.tworzy.net/maven/maven-3/${MAVEN_VERSION}/binaries/apache-maven-${MAVEN_VERSION}-bin.tar.gz /opt/temporary
 
 RUN tar -zxvf /opt/temporary/apache-maven-${MAVEN_VERSION}-bin.tar.gz -C /opt/ \
-    && ln -s /opt/apache-maven-${MAVEN_VERSION} /opt/apache-maven-latest
+    && ln -s /opt/apache-maven-${MAVEN_VERSION} /opt/apache-maven-latest \
+    && chmod +x /opt/apache-maven-latest/bin/mvn
 
-ENV PATH=$PATH:/opt/apache-maven-latest/bin
+ENV PATH=/opt/apache-maven-latest/bin:$PATH
