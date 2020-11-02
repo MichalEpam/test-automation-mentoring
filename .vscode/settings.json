@@ -10,5 +10,6 @@
             "default":  true
         },
     ],
-    "java.home": "/usr/lib/jvm/java-11-openjdk"
+    "java.home": "/usr/lib/jvm/java-11-openjdk",
+    "java.configuration.updateBuildConfiguration": "interactive"
 }
