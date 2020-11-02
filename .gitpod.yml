@@ -3,3 +3,7 @@ image:
 
 tasks:
   - command: 'java -version && mvn --version'
+
+vscode:
+  extensions:
+    - vscjava.vscode-maven
