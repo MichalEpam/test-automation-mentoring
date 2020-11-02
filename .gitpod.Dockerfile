@@ -1,7 +1,6 @@
 FROM alpine:edge
 
 ARG MAVEN_VERSION="3.6.3"
-ENV PATH="${PATH}:/opt/apache-maven-latest/bin"
 
 RUN addgroup -g 1000 node \
     && adduser -u 1000 -G node -s /bin/sh -D node \
