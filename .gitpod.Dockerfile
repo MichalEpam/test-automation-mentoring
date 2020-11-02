@@ -17,4 +17,5 @@ RUN addgroup -g 1000 node \
         make \
         python3 \
         openjdk11-jdk \
-        maven
+        maven \
+        openjdk8
