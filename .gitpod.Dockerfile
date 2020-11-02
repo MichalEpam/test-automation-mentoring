@@ -22,4 +22,4 @@ RUN addgroup -g 1000 node \
 
 ADD https://apache.mirrors.tworzy.net/maven/maven-3/${MAVEN_VERSION}/binaries/apache-maven-${MAVEN_VERSION}-bin.tar.gz /opt/temporary
 
-RUN tar -C /opt/temporary -xf apache-maven-${MAVEN_VERSION}-bin.tar.gz -C /opt/
+RUN tar -zxvf /opt/temporary/apache-maven-${MAVEN_VERSION}-bin.tar.gz -C /opt/
