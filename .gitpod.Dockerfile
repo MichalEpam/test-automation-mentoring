@@ -17,12 +17,4 @@ RUN addgroup -g 1000 node \
         make \
         python3 \
         openjdk11-jdk \
-    && mkdir /opt/temporary
-
-ADD https://apache.mirrors.tworzy.net/maven/maven-3/${MAVEN_VERSION}/binaries/apache-maven-${MAVEN_VERSION}-bin.tar.gz /opt/temporary
-
-RUN tar -zxvf /opt/temporary/apache-maven-${MAVEN_VERSION}-bin.tar.gz -C /opt/ \
-    && ln -s /opt/apache-maven-${MAVEN_VERSION} /opt/apache-maven-latest \
-    && chmod +x /opt/apache-maven-latest/bin/mvn
-
-ENV PATH=/opt/apache-maven-latest/bin:$PATH
+        maven
