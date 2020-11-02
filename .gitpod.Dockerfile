@@ -1,7 +1,6 @@
 FROM alpine:edge
 
 ARG MAVEN_VERSION="3.6.3"
-ENV PATH=$PATH:/opt/apache-maven-latest/bin
 
 RUN addgroup -g 1000 node \
     && adduser -u 1000 -G node -s /bin/sh -D node \
@@ -24,3 +23,5 @@ ADD https://apache.mirrors.tworzy.net/maven/maven-3/${MAVEN_VERSION}/binaries/ap
 
 RUN tar -zxvf /opt/temporary/apache-maven-${MAVEN_VERSION}-bin.tar.gz -C /opt/ \
     && ln -s /opt/apache-maven-${MAVEN_VERSION} /opt/apache-maven-latest
+
+ENV PATH=$PATH:/opt/apache-maven-latest/bin
