@@ -2,5 +2,5 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - init: 'gp env PATH=$PATH:/opt/apache-maven-latest/bin'
+  - init: ''
     command: 'java -version && mvn --version'
