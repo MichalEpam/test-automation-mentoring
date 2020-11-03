@@ -2,4 +2,10 @@
     "java.home": "/usr/lib/jvm/java-1.8-openjdk",
     //"java.home": "/usr/lib/jvm/java-11-openjdk",
     "java.configuration.updateBuildConfiguration": "interactive",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
 }
