@@ -39,7 +39,7 @@ assertThat(total).isEqualTo(1);
 
     }
     
-    } 
+    
 
  @Test
     public void multiply() {
@@ -47,14 +47,14 @@ assertThat(total).isEqualTo(1);
         int v2 = 2;
  
  
-        int total = v1 * v2;
+        double total = v1 * v2;
         
     
 assertThat(total).isEqualTo(5);
 
     }
 
-     } 
+   
 
  @Test
     public void divide() {
