@@ -24,9 +24,50 @@ public class NumberTest {
     
 assertThat(total).isEqualTo(9);
 
+ } 
+
+ @Test
+    public void minus() {
+        int v1 = 3; 
+        int v2 = 2;
+ 
+ 
+        int total = v1 - v2;
+        
+    
+assertThat(total).isEqualTo(1);
 
     }
     
+    } 
+
+ @Test
+    public void multiply() {
+        double v1 = 2.5d; 
+        int v2 = 2;
+ 
+ 
+        int total = v1 * v2;
+        
+    
+assertThat(total).isEqualTo(5);
+
+    }
+
+     } 
+
+ @Test
+    public void divide() {
+        int v1 = 6; 
+        int v2 = 2;
+ 
+ 
+        int total = v1 / v2;
+        
+    
+assertThat(total).isEqualTo(3);
+
+    }
  
     //Math operations
     // + sum
